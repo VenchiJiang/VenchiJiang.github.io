@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: 蒋文祺's Webpage # the website title (if blank, full name will be used instead)
+title: Venchi's Webpage # the website title (if blank, full name will be used instead)
 first_name: Venchi
 middle_name: 
 last_name: Jiang
@@ -68,7 +68,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: 蒋文祺's Blog  # your blog must have a name for it to show up in the nav bar
+blog_name: Venchi's Blog  # your blog must have a name for it to show up in the nav bar
 blog_description: a simple theme for academics
 permalink: /blog/:year/:title/
 
