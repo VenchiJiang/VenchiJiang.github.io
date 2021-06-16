@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Venchi's Webpage | Venchi's Webpage</title>
+<title>Venchi's Webpage</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -30,7 +30,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -72,10 +72,6 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="/">
-       Venchi's Webpage
-      </a>
-      
       <!-- Navbar Toggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -86,15 +82,17 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/">
               about
+              
+                <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -102,8 +100,6 @@
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -124,8 +120,8 @@
           
           
           
-            <div class = "toggle-container">
-              <a id = "light-toggle">
+            <div class="toggle-container">
+              <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
               </a>
@@ -144,54 +140,108 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Venchi's Blog</h1>
-    <h2>a simple theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">
+     Venchi's Webpage
+    </h1>
+     <p class="desc"><a href="http://en.hit.edu.cn">Harbin Institute of Technology</a></p>
+  </header>
 
+  <article>
+    
+    <div class="profile float-right">
+      
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/prof_pic.jpg">
+      
+      
+        <div class="address">
+          <p>Mysterious number</p> <p>Mysterious address</p>
 
-  <ul class="post-list">
+        </div>
+      
+    </div>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2021/equalsTest/">EqualsTest.java</a></h3>
-        <p class="post-meta">May 27, 2021</p>
-        <p>CoreJava - inheritance - object, the cosmic superclass</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/calendarTest/">CalendarTest.java</a></h3>
-        <p class="post-meta">May 23, 2021</p>
-        <p>CoreJava - objects and classes - using defined classes</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/hello/">my very first blog</a></h3>
-        <p class="post-meta">May 20, 2021</p>
-        <p>a "Hello World!" demo</p>
-      </li>
-    
-  </ul>
 
+    <div class="clearfix">
+      <p>Venchi Jiang, a sophomore in the school of Computer Science, Harbin Institute of Technology.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Work hard</code>to handle things properly.</p>
+
+    </div>
+
+    
+      <div class="news">
+  <h2>news</h2>
   
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+      
+      
+        <tr>
+          <th scope="row">Jun 11, 2021</th>
+          <td>
+            
+              A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Jun 1, 2021</th>
+          <td>
+            
+              <a class="news-title" href="/news/announcement_2/">A long announcement with details</a>
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">May 20, 2021</th>
+          <td>
+            
+              A simple announcement of the commencement of my blogs.
+
+            
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+</div>
+
     
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="Venchi's Webpage">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="Venchi's Webpage - page 2">2</a></li>
-      
+
     
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+
+    
+    <div class="social">
+      <div class="contact-icons">
+        <a href="mailto:%31%31%39%30%34%30%30%38%31%38@%73%74%75.%68%69%74.%65%64%75.%63%6E"><i class="fas fa-envelope"></i></a>
 
 
+
+
+<a href="https://github.com/VenchiJiang" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="contact-note">You can even add a little note about which of these is the best way to reach you.
+</div>
+    </div>
+    
+  </article>
 
 </div>
 
@@ -202,7 +252,7 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 Venchi  Jiang.
+    © Copyright 2021 Venchi  Jiang.
     Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
     
