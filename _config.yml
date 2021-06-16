@@ -16,7 +16,7 @@ footer_text: >
 
 icon: 🔥 # the emoji used as the favicon
 url:  # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -43,7 +43,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: VenchiJiang# your GitHub user name
+github_username: VenchiJiang # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
@@ -77,7 +77,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: Venchi # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -137,19 +137,43 @@ plugins:
 # Extras
 github: [metadata]
 
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+
+  last_name: Einstein
+  first_name: [Albert, A.]
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
 
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    true  # enables google analytics
-enable_panelbear_analytics: true  # enables panelbear analytics
+enable_google_analytics:    false  # enables google analytics
+enable_panelbear_analytics: false  # enables panelbear analytics
 enable_mansory:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)
-enable_tooltips:            true  # enables automatic tooltip links generated
+enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
-enable_navbar_social:       true  # enables displaying social links in the
+enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
@@ -189,3 +213,4 @@ popper:
 medium_zoom:
   version: "1.0.6"
   integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
+
